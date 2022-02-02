@@ -1,0 +1,767 @@
+@charset "UTF-8";
+
+/*---Reset---*/
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+html {
+}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+/*クラス定義*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-table;
+	position: relative;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfixheight: 1%;}
+*+html .clearfix{min-height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	/* border:1px solid red; */
+
+}
+/*--- ページ基本デザイン ---*/
+#header {
+	width: 100%;
+	height: 80px;
+	float: left;
+	background-color: #000000;
+}
+#logo{
+	width: 150px;
+	margin: 5px;
+	float: left;
+}
+#logo2 {
+	display: none;
+}
+nav.menu ul li a{
+	display: none;
+}
+#event1 {
+	width: 100%;
+	height: 110px;
+	float: left;
+	background-color: #F2F2F2;
+}
+#event1 h1{
+  margin: 10px;
+	float: left;
+  font-size: 20px;
+	padding: 30px 0 0 90px;
+}
+#event1 ul{
+	float: right;
+	margin: 0 50px 0 0;
+	padding: 45px 0 0 90px;
+
+}
+#event1 ul li {
+    float: left;
+    transform: scale( 0.7 , 0.8 );
+    border-bottom: solid 1px #fff;
+    color: #fff;
+}
+#event2 {
+	float: left;
+	width: 900px;
+  margin: 0;
+  padding: 0;
+}
+.pic1 {
+	width: 100vh;
+	margin: 50px 0 0 100px;
+}
+#event3 h1{
+	font-size: 35px;
+
+	margin: 10px 0 0 100px;
+}
+#event3 h2{
+	font-size: 13px;
+	margin: 20px 0 0 100px;
+}
+#event3 h3{
+	font-size: 13px;
+	margin: 20px 0 0 100px;
+}
+#event4 h1{
+	font-size: 13px;
+	margin: 40px 0 0 100px;
+}
+#event4 h2{
+	font-size: 13px;
+	margin: 20px 0 0 100px;
+}
+#event4 h3{
+	font-size: 13px;
+	margin: 20px 0 0 100px;
+}
+#event4 h4{
+	font-size: 13px;
+	margin: 20px 0 0 100px;
+}
+#event4 h5{
+	font-size: 13px;
+	margin: 20px 0 0 100px;
+}
+
+#event5 {
+	padding: 60px 0;
+	border-bottom: solid 1px #c9c0c0;
+	margin: 20px 0 0 100px;
+}
+#event5 h1{
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}
+#event5 h2{
+	font-size: 13px;
+	margin: 5px 0 0 0;
+}
+#event5 h3{
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}
+#event5 h4{
+	font-size: 13px;
+	margin: 5px 0 0 0;
+}
+#event5 h5{
+	font-size: 13px;
+	margin: 5px 0 0 0;
+}
+
+#event6 {
+	padding: 40px 0;
+	margin: 20px 0 0 100px;
+}
+#event6 h1{
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}
+#event6 h2{
+	font-size: 13px;
+	margin: 5px 0 0 0;
+}
+#event6 h3{
+	font-size: 13px;
+	margin: 60px 0 0 0;
+}
+#event6 h4{
+	font-size: 13px;
+	margin: 5px 0 0 0;
+}
+#event6 h5{
+	font-size: 13px;
+	margin: 5px 0 0 0;
+}
+.pic2 {
+	margin: 20px 0 0 -10px;
+}
+.pic3 {
+	width: 100vh;
+	margin: 60px 0 0 0;
+}
+#event7 {
+	padding: 40px 0;
+	margin: 20px 0 0 100px;
+}
+.pic4 {
+	width: 100vh;
+}
+#event7 h1{
+	font-size: 35px;
+	margin: 10px 0 0 0;
+}
+#event7 h2{
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}
+
+.pic5 {
+	width: 100vh;
+	margin: 5px 0 0 0;
+}
+#event8 {
+	padding: 20px 0;
+	margin: 0px 0 0 100px;
+	border-bottom: solid 1px #c9c0c0;
+}
+.pic6 {
+	width: 100vh;
+}
+#event8 h1{
+	font-size: 35px;
+	margin: 10px 0 0 0;
+}
+#event8 h2{
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}
+#event9 {
+	padding: 20px 0;
+	margin: 0px 0 0 100px;
+}
+#event9 h1{
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}
+#event9 h2{
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}
+.pic8 {
+	width: 100vh;
+	margin: 5px 0 0 0;
+}
+#event10 {
+	padding: 10px 0;
+	margin: 0px 0 0 100px;
+	border-bottom: solid 1px #c9c0c0;
+}
+.pic9 {
+	width: 100vh;
+}
+#event10 h1{
+	font-size: 35px;
+	margin: 10px 0 0 0;
+}
+#event10 h2{
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}
+#event10 h3{
+	font-size: 20px;
+	margin: 20px 0 0 0;
+}
+#event11 {
+	padding: 20px 0;
+	margin: 0px 0 0 100px;
+}
+#event11 h1{
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}
+#event11 h2{
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}
+#event12 {
+	padding: 10px 0;
+	margin: 0px 0 0 100px;
+	border-bottom: solid 1px #c9c0c0;
+}
+.pic11 {
+	width: 100vh;
+}
+#event12 h1{
+	font-size: 35px;
+	margin: 10px 0 0 0;
+}
+#event12 h2{
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}
+#event12 h3{
+	font-size: 20px;
+	margin: 20px 0 0 0;
+}
+#event13 {
+	padding: 20px 0;
+	margin: 0px 0 0 100px;
+}
+#event13 h1{
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}
+#event13 h2{
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}
+
+#event14 {
+	padding: 10px 0;
+	margin: 0px 0 0 100px;
+	border-bottom: solid 1px #c9c0c0;
+}
+.pic12 {
+	width: 100vh;
+}
+#event14 h1{
+	font-size: 35px;
+	margin: 10px 0 0 0;
+}
+#event14 h2{
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}
+#event14 h3{
+	font-size: 20px;
+	margin: 20px 0 0 0;
+}
+#event15 {
+	padding: 20px 0;
+	margin: 0px 0 0 100px;
+}
+#event15 h1{
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}
+#event15 h2{
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}
+
+#event16 {
+	margin: 0px 0 0 100px;
+}
+.pic14 {
+	width: 100vh;
+}
+#event16 h1{
+	font-size: 35px;
+	margin: 10px 0 0 0;
+}
+#event16 h2{
+	font-size: 13px;
+	margin: 20px 0 0 0;
+	text-align: center;
+}
+#event16 h3{
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}
+#event16 h4{
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}
+#event16 h5{
+	font-size: 25px;
+	margin: 20px 0 0 0;
+}
+#event16 h6{
+	font-size: 13px;
+	margin: 10px 0 0 0;
+}
+#event17 {
+	padding: 10px 0;
+	margin: 0px 0 0 100px;
+}
+#event17 h1{
+	font-size: 20px;
+	padding: 10px 0;
+	border-bottom: solid 1px #c9c0c0;
+}
+#event17 h2{
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}
+#event17 h3{
+	font-size: 13px;
+}
+#event17 h4{
+	font-size: 13px;
+	margin: 30px 0 0 0;
+}
+
+#sideber {
+	width: 300px;
+  float: left;
+	color: #C0C0C0;
+	font-size: 12px;
+}
+#side1 {
+	padding: 10px 0 0 70px;
+}
+#side1 p {
+	padding: 50px 10px 10px 10px;
+}
+#side1 h1 {
+	padding: 70px 0 0 10px;
+}
+#side1 h2 {
+	padding: 10px 0 0 10px;
+}
+#side1 h3 {
+	padding: 10px 0 0 10px;
+}
+#side2 {
+	padding: 130px 0 0 70px;
+}
+#side2 h1 {
+	padding: 70px 0 0 10px;
+}
+#side2 h2 {
+	padding: 10px 0 0 10px;
+}
+#side2 h3 {
+	padding: 10px 0 0 10px;
+}
+#side2 h4 {
+	padding: 10px 0 0 10px;
+}
+#side2 h5 {
+	padding: 10px 0 0 10px;
+}
+#side3 {
+	padding: 40px 0 0 70px;
+}
+#side3 h1 {
+	padding: 70px 0 0 10px;
+}
+#side3 h2 {
+	padding: 10px 0 0 10px;
+}
+#side4 {
+	padding: 40px 0 0 70px;
+}
+#side4 h1 {
+	padding: 70px 0 0 10px;
+}
+#side4 h2 {
+	padding: 10px 0 0 10px;
+}
+#side4 h3 {
+	padding: 10px 0 0 10px;
+}
+#side4 h4 {
+	padding: 10px 0 0 10px;
+}
+.foot {
+	width: 100%;
+	height: 100px;
+	float: left;
+	background-color: #000000;
+}
+#foot1 p{
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	padding: 50px 700px 0 0;
+}
+
+
+@media screen and (max-width: 768px) {
+	#header {
+		width: 100%;
+		height: 60px;
+		z-index : 5;
+		position: fixed;
+	}
+	#logo {
+		width: 100px;
+		margin: 10px;
+		float: left;
+		z-index : 5;
+		position: fixed;
+	}
+	#event1 {
+		width: 100%;
+		height: 80px;
+		float: left;
+		margin: 60px 0 0 0;
+	}
+	#event1 h1{
+	  margin: 10px;
+		float: left;
+	  font-size: 10px;
+		padding: 25px 0 0 15px;
+	}
+	#event1 ul{
+		font-size: 12px;
+		float: right;
+		margin: 0 20px 0 0;
+		padding: 35px 0 0 35px;
+
+	}
+	#event1 ul li {
+	  float: left;
+	  transform: scale( 0.7 , 0.8 );
+    border-bottom: solid 1px #fff;
+	  color: #fff;
+	}
+	#event2 {
+		width: 100%;
+	  margin: 0 0 0 -100px;
+	  padding: 0;
+	}
+	#event3{
+		width: 100%;
+		margin: 0 0 0 40px;
+	}
+	.pic1 {
+		width: 75%;
+	}
+	#event3 h1 {
+		font-size: 20px;
+	}
+	#event4{
+		margin: 0 0 0 40px;
+		width: 100%;
+	}
+	#event5{
+		width: 75%;
+		margin: 0 0 0 140px;
+	}
+	#event6{
+		width: 75%;
+		margin: 0 0 0 140px;
+	}
+	.pic2 {
+		width: 50%;
+	}
+	.pic3 {
+		width: 100%;
+	}
+	#event7{
+		width: 75%;
+		margin: 0 0 0 140px;
+	}
+	.pic4 {
+		width: 100%;
+	}
+	#event7 h1 {
+		font-size: 20px;
+		width: 100%;
+	}
+	.pic5 {
+		width: 100%;
+	}
+	#event8{
+		width: 75%;
+		margin: 0 0 0 140px;
+	}
+	.pic6 {
+		width: 100%;
+	}
+	#event8 h1 {
+		font-size: 20px;
+		width: 100%;
+	}
+	#event9{
+		width: 75%;
+		margin: 0 0 0 140px;
+	}
+	#event10{
+		width: 75%;
+		margin: 0 0 0 140px;
+	}
+	.pic9 {
+		width: 100%;
+	}
+	#event10 h1 {
+		font-size: 20px;
+		width: 100%;
+	}
+	#event11{
+		width: 75%;
+		margin: 0 0 0 140px;
+	}
+	#event12{
+		width: 75%;
+		margin: 0 0 0 140px;
+	}
+	.pic11 {
+		width: 100%;
+	}
+	#event12 h1 {
+		font-size: 20px;
+		width: 100%;
+	}
+	#event13{
+		width: 75%;
+		margin: 0 0 0 140px;
+	}
+	.pic7 {
+		width: 50%;
+	}
+	#event14{
+		width: 75%;
+		margin: 0 0 0 140px;
+	}
+	.pic12 {
+		width: 100%;
+	}
+	#event14 h1 {
+		font-size: 20px;
+		width: 100%;
+	}
+	#event15{
+		width: 75%;
+		margin: 0 0 0 140px;
+	}
+	.pic13 {
+			width: 50%;
+	}
+	#event16{
+		width: 75%;
+		margin: 0 0 0 140px;
+	}
+	.pic14 {
+	    width: 100%;
+	}
+	#event16 h1 {
+		font-size: 20px;
+		width: 100%;
+	}
+	#event17{
+		width: 75%;
+		margin: 0 0 0 140px;
+	}
+	.pic8 {
+	    width: 100%;
+	    margin: 5px 0 0 0;
+	}
+	#sideber {
+		width: 100%;
+		padding: 0 0 70px 0;
+	}
+	#side1 {
+		width: 90%;
+		padding: 0 0 0 35px;
+	}
+	#side2 {
+		padding: 30px 0 0 35px;
+	}
+	#side3 {
+		padding: 0 0 0 35px;
+	}
+	#side4 {
+		padding: 30px 0 0 35px;
+	}
+	.foot {
+		width: 100%;
+	}
+	#foot1 p{
+		text-align: center;
+		color: #fff;
+		font-size: 12px;
+		padding: 30px 0 0 25px;
+		float: left;
+		width: 90%;
+	}
+
+	.btn-gnavi {
+		float: left;
+	  display : block;
+	  position: fixed;
+	  z-index : 3;
+	  right : 13px;
+	  top   : 12px;
+	  width : 35px;
+	  height: 42px;
+	  cursor: pointer;
+	  text-align: center;
+	}
+	.btn-gnavi span {
+	  display : block;
+	  position: absolute;
+	  width   : 30px;
+	  height  : 2px ;
+	  left    : 6px;
+	  background : #c9c0c0;
+	  -webkit-transition: 0.3s ease-in-out;
+	  -moz-transition   : 0.3s ease-in-out;
+	  transition        : 0.3s ease-in-out;
+	}
+	.btn-gnavi span:nth-child(1) {
+	  top: 10px;
+	}
+	.btn-gnavi span:nth-child(2) {
+	  top: 20px;
+	}
+	.btn-gnavi span:nth-child(3) {
+	  top: 30px;
+	}
+	#logo2 {
+		display: block;
+		position: fixed;
+    width: 20%;
+    padding: 13px 0 0 8px;
+    float: left;
+		z-index : 5;
+	}
+	nav.menu {
+	  position: fixed;
+	  z-index : 2;
+	  top  : 0;
+	  left : 0;
+	  color: #000;
+	  background: #fff;
+	  text-align: center;
+	  transform: translateY(-100%);
+	  transition: all 0.6s;
+	  width: 100%;
+		height: 170px;
+	}
+	.menu.change-color {
+		background-color:rgba(255,255,255,0.4);
+	}
+	nav.menu ul {
+	  background: #fff;
+	  margin: 0 auto;
+	  padding: 50px 100px 0 30px;
+	  width: 100%;
+		opacity: 0.5;
+	}
+	nav.menu ul li {
+	  list-style-type: none;
+	  padding: 0;
+	  width: 100%;
+	}
+	nav.menu ul li:last-child {
+	  padding-bottom: 0;
+	  border-bottom: none;
+	}
+	nav.menu ul li a {
+	  display: block;
+	  color: #000;
+	  padding: 3px 0;
+	  text-decoration :none;
+	}
+	nav.menu ul li a:hover{
+		border-bottom: solid 1px #F2F2F2;
+	}
+	/* このクラスを、jQueryで付与・削除する */
+	nav.menu.active {
+	  transform: translateY(0%);
+	}

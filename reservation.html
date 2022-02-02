@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BEYOND AT LIFEJUNCTION</title>
+  <link rel="shortcut icon" href="./img/ljc_icon.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="css/reservation.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script type="text/javascript" src="js/jquery.js"></script>
+
+  <script>
+
+  $(window).on('scroll', function () {
+    if ($('.menu').height() < $(this).scrollTop()) {
+        $('.menu').addClass('change-color');
+        $('.menu a').hover(
+          function() {
+            $(this).css('color','#3366FF');
+          },function() {
+            $(this).css('color','#fff');
+          });
+    } else {
+        $('.menu').removeClass('change-color');
+        $('.menu a').hover(
+          function() {
+            $(this).css('color','#fff');
+          },function() {
+            $(this).css('color','#fff');
+          });
+        }
+    });
+
+    $(function() {
+      $('.btn-gnavi').click(function() {
+          $(this).toggleClass('active');
+
+          if ($(this).hasClass('active')) {
+              $('.menu').addClass('active');
+              $(".btn-gnavi span").css('background','#222222');
+              $("#logo").css('display','none');
+          } else {
+              $('.menu').removeClass('active');
+              $(".btn-gnavi span").css('background','#c9c0c0');
+              $("#logo").css('display','');
+          }
+      });
+    });
+
+  </script>
+
+</head>
+<body>
+
+  <div id="reservation" class="clearfix">
+    <div id="header" class="clearfix">
+      <a href=./index.html><img id="logo" src="./img/beyond_80.png" alt="ロゴ"></a>
+
+      <div class="btn-gnavi">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div>
+      <div class="menu1">
+        <nav class="menu">
+          <a href="./index.html"><img id="logo2" src="./img/beyond_54.png" alt="ロゴ"></a>
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./nextevent.html">NEXT EVENT</a></li>
+            <li><a href="./backnumber.html">BACK NUMBER</a></li>
+            <li><a href="./reservation.html">イベント予約はこちら</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div><!--header-->
+
+    <div id="reservation1" class="clearfix">
+      <img class="pic1" src="./img/beyond_71.png" alt="写真1">
+      <h1>QRコードでLINEの友だちを追加</h1>
+      <h2>LINEアプリの友だちタブを開き、画面右上にある友だち追加ボタン＞[QRコード]を<br>タップして、コードリーダーでスキャンしてください。</h2>
+    </div><!--reservation1-->
+
+    <div id="reservation2">
+      <h1 class="inline">LINEについて</h1>
+      <h1 class="inline">今すぐダウンロード</h1>
+    </div><!--reservation2-->
+  </div><!--reservation-->
+
+
+</body>
+</html>

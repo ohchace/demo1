@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BEYOND AT LIFEJUNCTION</title>
+  <link rel="shortcut icon" href="./img/ljc_icon.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="css/nextevent.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script type="text/javascript" src="js/jquery.js"></script>
+
+  <script>
+
+  $(window).on('scroll', function () {
+    if ($('.menu').height() < $(this).scrollTop()) {
+        $('.menu').addClass('change-color');
+    } else {
+        $('.menu').removeClass('change-color');
+        }
+    });
+
+    $(function() {
+      $('.btn-gnavi').click(function() {
+          $(this).toggleClass('active');
+
+          if ($(this).hasClass('active')) {
+              $('.menu').addClass('active');
+              $(".btn-gnavi span").css('background','#222222');
+              $("#logo").css('display','none');
+          } else {
+              $('.menu').removeClass('active');
+              $(".btn-gnavi span").css('background','#c9c0c0');
+              $("#logo").css('display','');
+          }
+      });
+    });
+
+  </script>
+
+</head>
+<body>
+  <div id="event" class="clearfix">
+    <div id="header" class="clearfix">
+      <a href=./index.html><img id="logo" src="./img/beyond_55.png" alt="ロゴ"></a>
+
+      <div class="btn-gnavi">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div>
+      <div class="menu1">
+        <nav class="menu">
+          <a href="./index.html"><img id="logo2" src="./img/beyond_54.png" alt="ロゴ"></a>
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./nextevent.html">NEXT EVENT</a></li>
+            <li><a href="./backnumber.html">BACK NUMBER</a></li>
+            <li><a href="./reservation.html">イベント予約はこちら</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div><!--header-->
+
+    <div id="event1" class="clearfix">
+      <h1>イベント詳細</h1>
+      <ul>
+        <li><a href="./index.html"><span style="color: #000000">HOME/</span></a></li>
+        <li><a href="./nextevent.html"><span style="color: #000000">イベント詳細</span></a></li>
+      </ul>
+    </div><!--event1-->
+
+    <div id="event2" class="clearfix">
+      <div id="event3" class="clearfix">
+        <img class="pic1" src="./img/beyond_63.jpg" alt="写真1">
+        <h1>第8弾！ 【100名限定】 ”BEYOND” AT LIFEJUNCTION VOL.08</h1>
+        <h2>毎回ゲストスピーカーをお呼びして「企業、経営者が語るぶっちゃけ本音トーク」をメインテーマに講演・交流会を開催します。</h2>
+        <h3>第8のゲストは、大川達弘様。</h3>
+      </div><!--event3-->
+      <div id="event4" class="clearfix">
+        <h1>500円海鮮丼で有名な「丼丸」（現株式会社ニホンバシ）の代表取締役でもあり、株式会社WAOCON代表取締役としてフランチャイルズ展開、SNSマーケティングなど、まさに「世の中に流行らせる」ことを事業として取り組まれている方です。</h1>
+        <h2>「流行らせるってどういうこと？」</h2>
+        <h3>「マーケティングって？」</h3>
+        <h4>ということから、気さくなお人柄の大川様にたくさんお話いただこうと思います。</h4>
+        <h5>このような貴重な機会、みなさんのキャリアや今後の人生において役立つことは間違いなしです！</h5>
+      </div><!--event4-->
+      <div id="event5" class="clearfix">
+        <h1>講演後には懇親会を開催します。</h1>
+        <h2>ゲストの大川様を始め、<span style="color:#00BFFF;">LIFE JUNCTION</span>スタッフに直接キャリアに関する相談も可能です！</h2>
+        <h3>また、今回なんと特別に<span style="color:#00BFFF;">”TEAM COLERS”</span>が懇親会中に【第一印象辛口CHECKコーナー】を開いてくれることになりました！</h3>
+        <h4>普段友達や同僚が言ってくれない、あなたの印象や見た目についてプロの目からアドバイスをもらえるチャンス。</h4>
+        <h5>ぜひご参加ください。</h5>
+      </div><!--event5-->
+      <div id="event6" class="clearfix">
+        <h1>◇日時◇</h1>
+        <h2>11月/29(木)19:30〜</h2>
+        <h3>◇会場◇</h3>
+        <h4>代官山駅5分 GOBLIN代官山</h4>
+        <h5>東京都渋谷区恵比寿西1-33-18 コート代官山B1F</h5>
+        <img class="pic2" src="./img/beyond_76.jpg" alt="写真2">
+        <img class="pic3" src="./img/beyond_65.jpg" alt="写真3">
+      </div><!--event6-->
+
+      <div id="event7" class="clearfix">
+        <img class="pic4" src="./img/beyond_62.jpg" alt="写真4">
+        <h1>第7弾！ 【70名限定】 ”BEYOND” AT LIFEJUNCTION VOL.07</h1>
+        <h2>毎回ゲストスピーカーをお呼びして「企業、経営者が語るぶっちゃけ本音トーク」をメインテーマに講演・交流会を開催します。第7回目のゲストは、経営アドバイザーや顧問として約40社を抱える、Top Challenge株式会社代表の福田胸就様。ありとあらゆる業界に太い繋がりを持ち、人脈の数は約10,000社を超え、直近5年間に約2,500件のビジネスマッチングを行う、人脈構築や営業テクニックのまさにプロフェッショナルです。さらに日本トップランカーのベンチプレス選手としての顔も持つスーパーマンのような方です。そんな福田様より、”ゼロから作る人脈構築のテクニック””勝手に仕事に繋がる、営業しない営業テクニック””多忙な中で身につけた時間の効率的な使い方”などを切り口に、今回は誰もが教えてほしい人脈作りの方法や仕事に繋げる方法、考え方、意識の仕方を披露していただきます。経営者が殺到するレベルの講演を、LIFE JUNCTIONのためならと特別にゲストとしてご登壇いただけることになりました。このような貴重な機会、みなさんのキャリアや今後の人生において役立つことは間違いなしです！講演後には懇親会を開催します。ゲストの大川様を始め、<span style="color:#00BFFF;">LIFE JUNCTION</span>スタッフに直接キャリアに関する相談も可能です！また、今回なんと特別に<span style="color:#00BFFF;">”TEAM COLERS”</span>が懇親会中に【第一印象辛口CHECKコーナー】を開いてくれることになりました！普段友達や同僚が言ってくれない、あなたの印象や見た目についてプロの目からアドバイスをもらえるチャンス。ぜひご参加ください。◇日時◇ 8/10(金)19:15 OPEN 19:30 START 22:30 CLOSE ◇会場◇ SLACK BOX SHIBUYA 150-0031 東京都渋谷区桜丘町31-14岡三桜丘ビル1階 ◇料金◇ メンバー価格：3,500円 ビジター価格：4,000円 ※セミナー参加費＋懇親会（軽食含む） ◇締切◇ ※LIFE JUNCTIONメンバーの方は優先申込でお席の確保をします。 優先申込：7/31（メンバーまたはメンバーのご紹介様限定） 一般申込：8/8 <span style="font-weight:bolder;">▼申込はこちらから</span></h2>
+        <img class="pic5" src="./img/beyond_59.jpg" alt="写真5">
+      </div><!--event7-->
+
+      <div id="event8" class="clearfix">
+        <img class="pic6" src="./img/beyond_64.jpg" alt="写真6">
+        <h1>第6弾！ 【70名限定】 ”BEYOND” AT LIFEJUNCTION VOL.06</h1>
+        <h2>毎回ゲストスピーカーをお呼びして「企業、経営者が語るぶっちゃけ本音トーク」をメインテーマに講演・交流会を開催します。第5回目のゲストは、Jobwebにて執行役員、ランサーズにて部長リーダー職を歴任され、現在は人材開発分野でパーソナルコーチングを企業や個人向けに展開しており、近々法人立ち上げ予定の中村勇気様。そんな中村様より、”個の時代になった今、求められる人材とは？””企業寿命よりも個人寿命が長い時代において身につけるべき実力とは？””スキルや専門性だけでなく、事故発見を通して自らの人間力を発揮していくには？”などを切り口に、企業側も個人側からも熟知されている中村様から、組織や企業への完全依存ではなく、個人として生き抜くための考え方をご披露していただきます。どのような人材が求められているのか。業界問わず共通する人材像とは、求職者側が勘違いしている人材あるある、ということをテーマに、かなり本音を”ぶっちゃけて”いただくこの機会、みなさんのキャリアや今後の人生において役立つことは間違いなしです！！また、講演後には懇親会を開催します。ゲストの中村様を始め、LIFE JUNCTIONスタッフに直接キャリアに関する相談も可能です！懇親会でしか聞けない話もあるかも。。。？ぜひ参加者同士での交流も深めてください。　<span style="font-weight:bolder;">詳細情報</span></h2>
+      </div><!--event8-->
+
+      <div id="event9" class="clearfix">
+        <h1>◇日時◇ 7/18(水)19:15 OPEN 19:30 START 22:30 CLOSE ◇会場◇ SLACK BOX SHIBUYA 150-0031 東京都渋谷区桜丘町31-14岡三桜丘ビル1階</h1>
+        <img class="pic7" src="./img/beyond_77.jpg" alt="写真7">
+        <h2>◇料金◇ メンバー価格：3,500円 ビジター価格：4,000円 ※セミナー参加費＋懇親会（軽食含む） ◇締切◇ ※LIFE JUNCTIONメンバーの方は優先申込でお席の確保をします。 優先申込：7/1（メンバーまたはメンバーのご紹介様限定） 一般申込：7/14 <span style="font-weight:bolder;">▼申込はこちらから</span></h2>
+        <img class="pic8" src="./img/beyond_60.jpg" alt="写真8">
+      </div><!--event9-->
+
+      <div id="event10" class="clearfix">
+        <img class="pic9" src="./img/beyond_61.jpg" alt="写真9">
+        <h1>第5弾！ 【30名限定】 ”BEYOND” AT LIFEJUNCTION VOL.05</h1>
+        <h2>beyondでは毎回ゲストスピーカーをお呼びして「企業、経営者が語るぶっちゃけ本音トーク」をメインテーマに講演・交流会を開催します。が、今回は！！！ファーストステップとして運営元LIFE JUNCTIONからお届け！「ビジネスでもプライベートでも役立つ、相手への印象付けから距離感の詰め方まで」、TEAM COLERSからボディメイクトレーナーGOUKIをゲストとして迎え、トークセッションを行います。 ・相手に確実に印象を残すには？ ・自分が今どんな印象を与えているのか？ 初対面から「また会いたい」と思わせるには？などなどビジネスシーンはもちろんプライベートでも活用できる内容となっております！ ※LIFE JUNCTIONとは：<span style="color:#00BFFF;">http://www.lifejunction.jp/</span> TEAM COLERSとは：<span style="color:#00BFFF;">https://www.teamcolors.jp</span> また、講演後には懇親会を開催します。今回は特別にGOUKIによる”ボディバランス診断”を15名限定で無料実施いたします。また、LIFE JUNCTIONスタッフへのキャリア相談も可能です！ぜひ参加者同士での交流を深めてください。</h2>
+        <h3>詳細情報</h3>
+      </div><!--event10-->
+
+      <div id="event11" class="clearfix">
+        <h1>◇日時◇ 7/10(火)19:15 OPEN 19:30 START 22:30 CLOSE ◇会場◇ Patia(パティア)赤坂店 〒107-0052 東京都港区赤坂6-5-28 ヴェルディ赤坂 1F</h1>
+        <img class="pic7" src="./img/beyond_75.jpg" alt="写真10">
+        <h2>◇料金◇ メンバー価格：3,500円 ビジター価格：4,000円 ※セミナー参加費＋懇親会（軽食含む） ◇締切◇ ※LIFE JUNCTIONメンバーの方は優先申込でお席の確保をします。 優先申込：6/30（メンバーまたはメンバーのご紹介様限定） 一般申込：7/5 <span style="font-weight:bolder;">▼申込はこちらから</span></h2>
+        <img class="pic8" src="./img/beyond_60.jpg" alt="写真8">
+      </div><!--event11-->
+
+      <div id="event12" class="clearfix">
+        <img class="pic11" src="./img/beyond_58.jpg" alt="写真11">
+        <h1>第4弾！ 【100名限定】 ”BEYOND” AT LIFEJUNCTION VOL.04</h1>
+        <h2>毎回ゲストスピーカーをお呼びして「企業、経営者が語るぶっちゃけ本音トーク」をメインテーマに講演・交流会を開催します。第4回目のゲストは、スローガン株式会社にて人事・広報のリーダーポジションとしてご活躍される金子歩美様。2008年に慶応SFC卒業後、Ferrari,Maseratiなどを商材とする外資系企業にて人事・マーケティングなどを経験。その後2011年にレバレジーズ株式会社に転職、社員数50名規模から400名規模になるまでの間、約4年間新卒採用の責任者を担い、無名のベンチャーからの採用ブランディング、採用戦略の立案・実務までを経験。2015年7月よりスローガンに入社、現在に至る。今回、女性リーダーによる、”ぶっちゃけ”話を聞ける貴重な機会です！それに限らず、外資・日系大手企業からベンチャーのキャリアを有し、特に大手外資系企業を飛び出して無名のベンチャーを有名企業までに引き上げた採用責任者としての経験談はご自身のキャリアや今後のビジョン形成に役立つ事は間違い無いです！！どのような人材が求められているのか、業界問わず共通する人材像とは、求職者側が勘違いしている人材あるある、ということをテーマに、かなり本音を”ぶっちゃけて”いただくこの機会、みなさんのキャリアや今後の人生において役立つことは間違いなしです！！また、講演後には懇親会を開催します。ゲストの金子様を始め、LIFE JUNCTIONスタッフに直接キャリアに関する相談も可能です！懇親会でしか聞けない話もあるかも。。。？ぜひ参加者同士での交流も深めてください。</h2>
+        <h3>詳細情報</h3>
+      </div><!--event12-->
+
+      <div id="event13" class="clearfix">
+        <h1>◇日時◇ 6/13(水)19:15 OPEN 19:30 START 22:30 CLOSE ◇会場◇ SLACK BOX SHIBUYA 150-0031 東京都渋谷区桜丘町31-14岡三桜丘ビル1階</h1>
+        <img class="pic7" src="./img/beyond_77.jpg" alt="写真7">
+        <h2>◇料金◇ メンバー価格：3,500円 ビジター価格：4,000円 ※会費は懇親会も含む 将来を一歩明確にするため、是非役立てて下さい。 ◇締切◇ ※LIFE JUNCTIONメンバーの方は優先申込でお席の確保をします。 優先申込：5/23（メンバーまたはメンバーのご紹介様限定） 一般申込：6/7 <span style="font-weight:bolder;">▼申込はこちらから</span></h2>
+        <img class="pic8" src="./img/beyond_60.jpg" alt="写真8">
+      </div><!--event13-->
+
+      <div id="event14" class="clearfix">
+        <img class="pic12" src="./img/beyond_57.jpg" alt="写真12">
+        <h1>第3弾！ 【30名限定】 ”BEYOND” AT LIFEJUNCTION VOL.03</h1>
+        <h2>beyondでは毎回ゲストスピーカーをお呼びして「企業、経営者が語るぶっちゃけ本音トーク」をメインテーマに講演・交流会を開催します。が、今回は！！！ファーストステップとして運営元LIFE JUNCTIONからお届け！「ビジネスでもプライベートでも役立つ、相手への印象付けから距離感の詰め方まで」、TEAM COLERSからボディメイクトレーナーGOUKIをゲストとして迎え、トークセッションを行います。 ・相手に確実に印象を残すには？ ・自分が今どんな印象を与えているのか？ 初対面から「また会いたい」と思わせるには？などなどビジネスシーンはもちろんプライベートでも活用できる内容となっております！ ※LIFE JUNCTIONとは：<span style="color:#00BFFF;">http://www.lifejunction.jp/</span> TEAM COLERSとは：<span style="color:#00BFFF;">https://www.teamcolors.jp</span> また、講演後には懇親会を開催します。今回は特別にGOUKIによる”ボディバランス診断”を15名限定で無料実施いたします。また、LIFE JUNCTIONスタッフへのキャリア相談も可能です！ぜひ参加者同士での交流を深めてください。</h2>
+        <h3>詳細情報</h3>
+      </div><!--event14-->
+
+      <div id="event15" class="clearfix">
+        <h1>◇日時◇ 6/9(土)19:15 OPEN 19:30 START 22:30 CLOSE ◇会場◇ 〒107-0062 東京都港区南青山3丁目2-7 ブラック青山 5F LOUNGE</h1>
+        <img class="pic13" src="./img/beyond_79.jpg" alt="写真13">
+        <h2>会費は懇親会も含めてなんと メンバー価格：3,500円！ ビジター価格：4,000円！ 将来を一歩明確にするため、是非役立てて下さい。 ◇締切◇ 優先申込：5/25（ご紹介様限定） 一般申込：6/5 <span style="font-weight:bolder;">▼申込はこちらから</span></h2>
+        <img class="pic8" src="./img/beyond_60.jpg" alt="写真8">
+      </div><!--event15-->
+
+      <div id="event16" class="clearfix">
+        <img class="pic14" src="./img/beyond_56.jpg" alt="写真14">
+        <h1>第2弾！ 【100名限定】 ”BEYOND” AT LIFEJUNCTION VOL.02</h1>
+        <h2>次回イベント情報</h2>
+        <h3>第2弾！ 開催決定！毎回ゲストスピーカーをお呼びして「企業、経営者が語るぶっちゃけ本音トーク」をメインテーマに講演・交流会を開催します。</h3>
+        <h4>第2回のゲストスピーカーは、</h4>
+        <h5>日本IBMの人材コンサルタントである近藤礼崇氏。</h5>
+        <h6>　「働きがいのある会社」ランキングにてベストカンパニーの受賞した有名ベンチャー企業にて採用リーダーを経験、20代若者を20,000人面談、5,000以上の面接をこなし、売上を入社前から約10倍の200億まで引き上げたご経験を持ち、更なる人事のプロフェッショナルとしてのキャリアを積むべく日本IBMにて人事コンサルタントとしてご活躍されています。　今回、数多くの若者や名だたる企業の人事コンサルティング経験のある近藤氏が多角的な面から、<span style="font-weight:bolder;">「”ぶっちゃけ”どのような人材が求められているのか」「業界問わず共通する人材像とは」「求職者側が勘違いしている人材あるある」</span>ということをテーマにかなり本音を”ぶっちゃけて”いただ来ます。ご自身のキャリアや今後のビジョン形成に役立つ事は間違い無いと思います！！また、講演後には懇親会を開催します。ゲストの近藤氏を始め、LIFE JUNCTIONスタッフに直接キャリアに関する相談も可能です！懇親会でしか聞けない話もあるかも。。。？ぜひ参加者同士での交流も深めてください。</h6>
+      </div><!--event16-->
+
+      <div id="event17" class="clearfix">
+        <h1>詳細情報</h1>
+        <h2>”BEYOND” AT LIFEJUNCTION VOL.02 <span style="font-weight:bolder;">日時</span> ：5/15(水)19:15 OPEN 19:30 START 22:30 CLOSE <span style="font-weight:bolder;">会場</span>： ザ・ミレニアルズ渋谷 4F 150-0041 東京都 渋谷区 神南1-20-13</h2>
+        <h3>JR渋谷駅から500m　徒歩約6分</h3>
+        <h4><span style="color:#00BFFF;">【Google MAPを見る】</span>　<span style="font-weight:bolder;">料金</span>：メンバー価格：3,500円 ビジター価格：4,000円 ※会費は懇親会も含む 将来を一歩明確にするため、是非役立てて下さい。 <span style="font-weight:bolder;">締切</span>：優先申込：4/25（メンバーまたはメンバーのご紹介様限定）※LIFE JUNCTIONメンバーの方は優先申込でお席の確保をします。  一般申込：5/14 <span style="font-weight:bolder;">▼申込はこちらから</span></h4>
+        <img class="pic8" src="./img/beyond_60.jpg" alt="写真8">
+      </div><!--event17-->
+    </div><!--event2-->
+
+    <div id="sideber" class="clearfix">
+      <div id="side1" class="clearfix">
+        <p><input type="text" style="width: 200px ; height: 40px;" name="search" placeholder="検索..."></p>
+        <h1>第8弾！ 【100名限定】 ”BEYOND” AT LIFEJUNCTION VOL.08</h1>
+        <h2>”BEYOND” AT LIFEJUNCTION VOL.06</h2>
+        <h3>”BEYOND” AT LIFEJUNCTION VOL.05</h3>
+      </div>
+
+      <div id="side2" class="clearfix">
+        <h1>2018年10月</h1>
+        <h2>2018年8月</h2>
+        <h3>2018年7月</h3>
+        <h4>2018年6月</h4>
+        <h5>2018年5月</h5>
+      </div>
+
+      <div id="side3" class="clearfix">
+        <h1>BACK NUMBER</h1>
+        <h2>イベント詳細</h2>
+      </div>
+
+      <div id="side4" class="clearfix">
+        <h1>ログイン</h1>
+        <h2>投稿のRSS</h2>
+        <h3>コメントのRSS</h3>
+        <h4>WordPress.org</h4>
+      </div>
+    </div>
+
+  </div><!--event-->
+
+  <footer>
+    <div class="foot clearfix">
+      <div id="foot1" class="clearfix">
+        <p>Copynight ©️ 2018 BEYOND AT LIFEJUNCTION    Designed by MageeWP Themes.</p>
+      </div><!--top17-->
+    </div><!--foot-->
+  </footer>
+</body>
+</html>
